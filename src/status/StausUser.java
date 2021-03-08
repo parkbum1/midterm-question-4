@@ -1,4 +1,4 @@
-package com.company;
+package status;
 
 public class StatusUser
 {

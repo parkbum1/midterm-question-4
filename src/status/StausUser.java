@@ -1,34 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package status;
+package com.company;
 
-/**
- * March 8th
- * @author srinivsi
- */
-public class StausUser 
+public class StatusUser
 {
-   public void statusDetail(String code)
-{
-switch(code.toUpperCase())
+    public void statusDetail(Code code)
+    {
+        switch(code)
         {
-        case "ZERO": System.out.println("REJECTED");
-        break;
-        case "ONE": System.out.println("PENDING");
-        break;
-        case "TWO":
-        System.out.println("PROCESSING");
-        break;
-        case "THREE": 
-            System.out.println("APPROVED");
-        break;
-        default:
-         System.out.println("NOT VALID CODE");
-        break;
+            case ZERO: System.out.println("REJECTED");
+                break;
+            case ONE: System.out.println("PENDING");
+                break;
+            case TWO:
+                System.out.println("PROCESSING");
+                break;
+            case THREE:
+                System.out.println("APPROVED");
+                break;
+            default:
+                // This is not really needed
+                System.out.println("NOT VALID CODE");
+                break;
         }
-}
- 
+    }
+
 }
